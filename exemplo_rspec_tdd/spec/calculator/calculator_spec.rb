@@ -1,6 +1,7 @@
 require 'calculator'
 
-describe Calculator do
+describe Calculator, 'Sobre a calculadora' do
+
   context '#sum' do
     it 'with positive numbers' do
       result = subject.sum(5,5)
@@ -17,6 +18,5 @@ describe Calculator do
       expect(result).to eq(-12)
     end
 
-    it 'with bla'
   end
 end
