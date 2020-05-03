@@ -28,4 +28,8 @@ describe 'Matchers de Comparação' do
     expect(3). to be_between(2, 7).exclusive
     expect(6). to be_between(2, 7).exclusive
   end
+
+  it 'match com regex' do
+    expect('fulano@com.br').to match(/..@../)
+  end
 end
