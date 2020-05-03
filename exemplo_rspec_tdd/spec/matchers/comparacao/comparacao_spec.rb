@@ -32,4 +32,14 @@ describe 'Matchers de Comparação' do
   it 'match com regex' do
     expect('fulano@com.br').to match(/..@../)
   end
+
+  it 'start_with' do
+    expect('fulano de tal').to start_with('fulano')
+    expect([1, 2, 3]).to start_with(1)
+  end
+
+  it 'endt_with' do
+    expect('fulano de tal').to end_with('tal')
+    expect([1, 2, 3]).to end_with(3)
+  end
 end
